@@ -1,0 +1,136 @@
+*{
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  background:hsl(0, 100%, 74%) url('images/bg-intro-mobile.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'poppins';
+}
+h1{
+  font-size: 2rem;
+  font-weight: 700;
+}
+a{
+  text-decoration: none;
+}
+p{
+  font-size:1rem;
+  font-weight: 400;
+}
+
+
+.container{
+  width: min(90%, 80%);
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.sleft{
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+.try{
+  background-color: hsl(248, 32%, 49%);
+  display: block;
+  padding: 0.4em 4em;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+#try{
+  background-color:white;
+  padding: 0.3em 1em;
+  border-radius: 5px;
+}
+.form-group{
+  position: relative;
+}
+.form-control{
+  display: block;
+  width: 100%;
+  padding: 1em;
+  border:1px solid ;
+  border-radius: 5px;
+  color:hsl(249, 10%, 26%);
+  margin: .9em auto 0 auto;
+  font-weight: 600;
+}
+.icon{
+  position: absolute;
+  top:15px;
+  left:90%;
+  display: none;
+}
+.invalid{
+  color: hsl(0, 100%, 74%);
+}
+
+.valid, .invalid{
+  text-align: right;
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+input[type=submit]{
+  margin: .5em 0;
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 3px;
+  outline: none !important;
+}
+.form-control:active,
+.form-control:valid,
+.form-control:focus,
+.form-control:invalid
+{
+  outline: none !important;
+}
+
+.form-control:focus:invalid{
+  border:3px solid hsl(0, 100%, 74%);
+}
+input[type=submit]:hover,
+input[type=submit]:focus{
+  cursor: pointer;
+  opacity: .9;
+}
+.click{
+  color:hsl(246, 25%, 77%);
+  font-weight: 500;
+}
+.click a{
+  color:hsl(0, 100%, 74%);
+}
+
+@media (min-width:500px){
+  h1{
+    font-size:3rem;
+  }
+  .container{
+    flex-direction:row;
+    align-items: center;
+  }
+  .sleft, .sright{
+    width: 50%;
+  }
+  .sleft{
+    margin-bottom: 0;
+    text-align:left;
+    padding: .7em;
+  }
+  .sleft p{
+    font-weight: 500;
+  }
+}
